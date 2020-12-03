@@ -11,6 +11,8 @@ type User struct {
 	Email   string `json:"email"`
 	Phone   string `json:"phone"`
 	Address string `json:"address"`
+	Password string `json:"password"`
+	Operation string `json:"operation"`
 }
 func (b *User) TableName() string {
 	return "user"
