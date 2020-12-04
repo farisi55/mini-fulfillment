@@ -42,23 +42,23 @@ func SetupRouter() *gin.Engine  {
 		}
 	})
 
-	sentrygroup := r.Group("/sentry")
-	{
-		sentrygroup.GET("error", Controllers.ErrorSentry)
-	}
+	//sentrygroup := r.Group("/sentry")
+	//{
+	//	sentrygroup.GET("error", Controllers.ErrorSentry)
+	//}
+	//
+	//usergroup := r.Group("/userapi")
+	//{
+	//	usergroup.GET("user", Controllers.GetUsers)
+	//
+	//}
 
-	usergroup := r.Group("/userapi")
+	admingroup := r.Group("/apps",  Middlewares.AuthorizeJWT(), Middlewares.AuthorizeUser())
 	{
-		usergroup.GET("user", Controllers.GetUsers)
-
-	}
-
-	admingroup := r.Group("/admin",  Middlewares.AuthorizeJWT(), Middlewares.AuthorizeUser())
-	{
-		admingroup.GET("user/:id", Controllers.GetUserByID)
-		admingroup.POST("user", Controllers.CreateUser)
-		admingroup.PUT("user/:id", Controllers.UpdateUser)
-		admingroup.DELETE("user/:id", Controllers.DeleteUser)
+		admingroup.GET("subs/:id", Controllers.GetPacket)
+		admingroup.POST("subs", Controllers.BuyPacket)
+		//admingroup.PUT("user/:id", Controllers.UpdateUser)
+		admingroup.DELETE("subs", Controllers.RemovePacket)
 	}
 
 	r.GET("/swagger/*any", ginSwagger.WrapHandler(swaggerFiles.Handler))

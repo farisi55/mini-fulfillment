@@ -9,12 +9,12 @@ import (
 func AuthorizeUser() gin.HandlerFunc{
 	return func(context *gin.Context) {
 		//set when token from user validated
-		var user,_ = context.Get("user")
+		var user,_ = context.Get("subs")
 		if user != ""{
 			method := context.Request.Method
 			allowed := false
 			for _, auth := range Service.StaticAuthService(){
-				if user == auth.Email{
+				if user == auth.Msisdn{
 					for _, perm := range auth.Permission{
 						if method == perm{
 							allowed = true

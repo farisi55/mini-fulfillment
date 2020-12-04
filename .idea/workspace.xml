@@ -1,35 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f6b21c6-4b4c-4fdd-b361-c08f3a08d116" name="Default Changelist" comment="" />
+    <list default="true" id="4f6b21c6-4b4c-4fdd-b361-c08f3a08d116" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Models/SubsModel.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5d9640c1-8ebb-4767-a706-f23f6660e150.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/5d9640c1-8ebb-4767-a706-f23f6660e150.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Config/Database.go" beforeDir="false" afterPath="$PROJECT_DIR$/Config/Database.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controllers/Auth.go" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/Auth.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controllers/User.go" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/User.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dto/LoginCredentials.go" beforeDir="false" afterPath="$PROJECT_DIR$/Dto/LoginCredentials.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Middlewares/Auth.go" beforeDir="false" afterPath="$PROJECT_DIR$/Middlewares/Auth.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Middlewares/JWTMiddleware.go" beforeDir="false" afterPath="$PROJECT_DIR$/Middlewares/JWTMiddleware.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/User.go" beforeDir="false" afterPath="$PROJECT_DIR$/Models/User.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/UserModel.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Routes/Routes.go" beforeDir="false" afterPath="$PROJECT_DIR$/Routes/Routes.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/Auth.go" beforeDir="false" afterPath="$PROJECT_DIR$/Service/Auth.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/JwtAuth.go" beforeDir="false" afterPath="$PROJECT_DIR$/Service/JwtAuth.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/Service.go" beforeDir="false" afterPath="$PROJECT_DIR$/Service/Service.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thedb.db" beforeDir="false" afterPath="$PROJECT_DIR$/subscriber.db" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="GOROOT" path="C:\Go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="GoLibraries">
     <option name="indexEntireGoPath" value="false" />
   </component>
   <component name="ProjectId" id="1l5Am62SYvk7KpVNeF2YLY2XG4K" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../mini-fulfillment_bck" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\BANU\devlopmentRepo\training-golang\day4\TheApp" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Build.go build theapp/mq (1)">
+  <component name="RunManager" selected="Go Build.go build main.go">
+    <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="TheApp" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/main.go" />
+      <package value="theapp" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
     <configuration name="go build theapp" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="TheApp" />
       <working_directory value="$PROJECT_DIR$" />
@@ -59,6 +106,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build main.go" />
         <item itemvalue="Go Build.go build theapp/mq (1)" />
         <item itemvalue="Go Build.go build theapp/mq" />
         <item itemvalue="Go Build.go build theapp" />
@@ -69,6 +117,20 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
   </component>
@@ -77,42 +139,42 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="552" y="183" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1606880206258" />
-    <state x="740" y="279" key="FileChooserDialogImpl" timestamp="1606896285363">
+    <state x="740" y="279" key="FileChooserDialogImpl" timestamp="1607069091332">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="740" y="279" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1606896285363" />
-    <state width="1877" height="305" key="GridCell.Tab.0.bottom" timestamp="1606983285823">
+    <state x="740" y="279" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1607069091332" />
+    <state width="1877" height="305" key="GridCell.Tab.0.bottom" timestamp="1607074724535">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="305" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1606983285823" />
-    <state width="1877" height="305" key="GridCell.Tab.0.center" timestamp="1606983285823">
+    <state width="1877" height="305" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1607074724535" />
+    <state width="1877" height="305" key="GridCell.Tab.0.center" timestamp="1607074724535">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="305" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1606983285823" />
-    <state width="1877" height="305" key="GridCell.Tab.0.left" timestamp="1606983285823">
+    <state width="1877" height="305" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1607074724535" />
+    <state width="1877" height="305" key="GridCell.Tab.0.left" timestamp="1607074724535">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="305" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1606983285823" />
-    <state width="1877" height="305" key="GridCell.Tab.0.right" timestamp="1606983285823">
+    <state width="1877" height="305" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1607074724535" />
+    <state width="1877" height="305" key="GridCell.Tab.0.right" timestamp="1607074724535">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="305" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1606983285823" />
-    <state width="1877" height="305" key="GridCell.Tab.1.bottom" timestamp="1606983285824">
+    <state width="1877" height="305" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1607074724535" />
+    <state width="1877" height="305" key="GridCell.Tab.1.bottom" timestamp="1606990033899">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="305" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1606983285824" />
-    <state width="1877" height="305" key="GridCell.Tab.1.center" timestamp="1606983285824">
+    <state width="1877" height="305" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1606990033899" />
+    <state width="1877" height="305" key="GridCell.Tab.1.center" timestamp="1606990033899">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="305" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1606983285824" />
-    <state width="1877" height="305" key="GridCell.Tab.1.left" timestamp="1606983285824">
+    <state width="1877" height="305" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1606990033899" />
+    <state width="1877" height="305" key="GridCell.Tab.1.left" timestamp="1606990033898">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="305" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1606983285824" />
-    <state width="1877" height="305" key="GridCell.Tab.1.right" timestamp="1606983285824">
+    <state width="1877" height="305" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1606990033898" />
+    <state width="1877" height="305" key="GridCell.Tab.1.right" timestamp="1606990033899">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="305" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1606983285824" />
+    <state width="1877" height="305" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1606990033899" />
     <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1606899401439">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -122,14 +184,9 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/Service/Service.go</url>
-          <line>15</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/Controllers/Auth.go</url>
-          <line>25</line>
-          <option name="timeStamp" value="6" />
+          <url>file://$PROJECT_DIR$/Routes/Routes.go</url>
+          <line>60</line>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

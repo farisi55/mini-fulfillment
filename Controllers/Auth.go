@@ -30,9 +30,9 @@ func (controller *loginController)Login(c *gin.Context)  string{
 		return "No Data Found"
 	}
 
-	isUserAuthenticated := controller.loginService.LoginUser(credential.Email, credential.Password)
+	isUserAuthenticated := controller.loginService.LoginUser(credential.Msisdn, credential.Pin)
 	if isUserAuthenticated{
-		return controller.jwtService.GenerateToken(credential.Email, true)
+		return controller.jwtService.GenerateToken(credential.Msisdn, true)
 	}
 
 	return ""

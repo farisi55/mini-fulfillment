@@ -1,18 +1,18 @@
 package Service
 
 type AuthInformation struct {
-	Email string
+	Msisdn string
 	Permission []string
 }
 
 func StaticAuthService() []AuthInformation{
 	var authlist = []AuthInformation{
 		AuthInformation{
-			Email:      "hakim@nganu.com",
+			Msisdn:      "0818123",
 			Permission: []string{"GET", "POST","PUT","DELETE"},
 		},
 		AuthInformation{
-			Email:      "andreas@nganu.com",
+			Msisdn:      "0818321",
 			Permission: []string{"GET", "POST"},
 		},
 	}

@@ -8,12 +8,12 @@ import (
 )
 
 type JWTService interface {
-	GenerateToken(email string, isUser bool) string
+	GenerateToken(msisdn string, isUser bool) string
 	ValidateToken(token string) (*jwt.Token, error)
 }
 
 type AuthCustomClaim struct {
-	Name string `json:"name"`
+	Msisdn string `json:"msisdn"`
 	User bool  `json:"user"`
 	jwt.StandardClaims
 }
@@ -37,9 +37,9 @@ func getSecretKey() string {
 	return secret
 }
 
-func (service *JwtServices) GenerateToken(email string, isUser bool) string  {
+func (service *JwtServices) GenerateToken(msisdn string, isUser bool) string  {
 	claims := AuthCustomClaim{
-		Name:           email,
+		Msisdn:           msisdn,
 		User:           isUser,
 		StandardClaims: jwt.StandardClaims{
 			ExpiresAt: time.Now().Add(time.Hour*48).Unix(),

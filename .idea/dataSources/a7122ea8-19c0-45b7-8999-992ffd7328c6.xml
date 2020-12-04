@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dataSource name="thedb">
+<dataSource name="subscriber">
   <database-model serializer="dbm" dbms="SQLITE" family-id="SQLITE" format-version="4.19">
     <root id="1">
       <ServerVersion>3.31.1</ServerVersion>
@@ -13,7 +13,7 @@
     <table id="6" parent="2" name="sqlite_master">
       <System>1</System>
     </table>
-    <table id="7" parent="2" name="user"/>
+    <table id="7" parent="2" name="subs"/>
     <column id="8" parent="6" name="type">
       <Position>1</Position>
       <DataType>text|0s</DataType>
@@ -34,33 +34,29 @@
       <Position>5</Position>
       <DataType>text|0s</DataType>
     </column>
-    <column id="13" parent="7" name="id">
+    <column id="13" parent="7" name="subs_id">
       <Position>1</Position>
       <DataType>integer|0s</DataType>
     </column>
-    <column id="14" parent="7" name="name">
+    <column id="14" parent="7" name="msisdn">
       <Position>2</Position>
       <DataType>text|0s</DataType>
     </column>
-    <column id="15" parent="7" name="email">
+    <column id="15" parent="7" name="balance">
       <Position>3</Position>
       <DataType>text|0s</DataType>
     </column>
-    <column id="16" parent="7" name="phone">
+    <column id="16" parent="7" name="serviceid">
       <Position>4</Position>
       <DataType>text|0s</DataType>
     </column>
-    <column id="17" parent="7" name="address">
+    <column id="17" parent="7" name="sysdate">
       <Position>5</Position>
       <DataType>text|0s</DataType>
     </column>
-    <column id="18" parent="7" name="password">
+    <column id="18" parent="7" name="pin">
       <Position>6</Position>
       <DataType>text|0s</DataType>
     </column>
-    <key id="19" parent="7">
-      <ColNames>id</ColNames>
-      <Primary>1</Primary>
-    </key>
   </database-model>
 </dataSource>

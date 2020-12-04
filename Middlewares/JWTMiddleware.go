@@ -20,7 +20,7 @@ func AuthorizeJWT() gin.HandlerFunc  {
 		if token.Valid{
 			claims := token.Claims.(jwt.MapClaims)
 			fmt.Println(claims)
-			context.Set("user", claims["name"])
+			context.Set("subs", claims["msisdn"])
 			return
 		}else{
 			fmt.Println(err)

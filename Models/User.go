@@ -1,39 +1,41 @@
 package Models
 
 import (
+	"fmt"
 	"github.com/getsentry/sentry-go"
 	"theapp/Config"
 )
 
-func GetAllUser(user *[]User) (err error)  {
-	if err = Config.DB.Find(user).Error; err != nil{
+func GetAllUser(subs *[]Subs) (err error)  {
+	if err = Config.DB.Find(subs).Error; err != nil{
 		return err
 	}
 	return nil
 }
 
-func CreateUser(user *User) (err error)  {
-	if err = Config.DB.Create(user).Error; err != nil{
+func PurchasePacket(subs *Subs) (err error)  {
+	if err = Config.DB.Create(subs).Error; err != nil{
 		return err
 	}
 	sentry.CaptureMessage("User created")
 	return nil
 }
 
-func GetUserByID(user *User, id string)(err error)  {
-	if err = Config.DB.Where("id=?", id).First(user).Error; err != nil{
+func GetSubsInfo(subs *Subs, id string)(err error)  {
+	if err = Config.DB.Where("subs_id=?", id).First(subs).Error; err != nil{
 		return err
 	}
 	return nil
 }
 
-func UpdateUser(user *User, id string) (err error) {
-	Config.DB.Save(user)
+func UpdateUser(subs *Subs, id string) (err error) {
+	Config.DB.Save(subs)
 	return nil
 }
 
-func DeleteUser(user *User, id string)(err error)  {
-	Config.DB.Where("id=?", id).Delete(user)
+func UnregPacket(subs *Subs,  id string, serviceid string)(err error)  {
+	fmt.Println(">>>>>",serviceid,id)
+	Config.DB.Where("subs_id=? and serviceid=?", id, serviceid).Delete(subs)
 	return nil
 }
 

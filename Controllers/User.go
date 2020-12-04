@@ -16,16 +16,16 @@ import (
 // @Success 200 {object} Models.User
 // @Router /userapi/user [get]
 func GetUsers(c *gin.Context)  {
-	var user[]Models.User
-	err := Models.GetAllUser(&user)
+	var subs[]Models.Subs
+	err := Models.GetAllUser(&subs)
 	if err != nil{
 		c.AbortWithStatus(http.StatusNotFound)
 	}else{
 		format := c.DefaultQuery("format", "json")
 		if format == "json"{
-			c.JSON(http.StatusOK, user)
+			c.JSON(http.StatusOK, subs)
 		}else{
-			c.XML(http.StatusOK, user)
+			c.XML(http.StatusOK, subs)
 		}
 	}
 }
@@ -38,52 +38,53 @@ func GetUsers(c *gin.Context)  {
 // @Produce  json
 // @Success 200 {object} Models.User
 // @Router /admin/user [POST]
-func CreateUser(c *gin.Context){
-	var user Models.User
-	c.BindJSON(&user)
-	err := Models.CreateUser(&user)
+func BuyPacket(c *gin.Context){
+	var subs Models.Subs
+	c.BindJSON(&subs)
+	err := Models.PurchasePacket(&subs)
 	if err != nil{
 		c.AbortWithStatus(http.StatusNotFound)
 	}else{
-		c.JSON(http.StatusOK, user)
+		c.JSON(http.StatusOK, subs)
 	}
 }
 
-func GetUserByID(c *gin.Context)  {
-	var user Models.User
+func GetPacket(c *gin.Context)  {
+	var subs Models.Subs
 	id := c.Params.ByName("id")
-	err := Models.GetUserByID(&user, id)
+	err := Models.GetSubsInfo(&subs, id)
 	if err != nil{
 		c.AbortWithStatus(http.StatusNotFound)
 	}else{
-		c.JSON(http.StatusOK, user)
+		c.JSON(http.StatusOK, subs)
 	}
 }
 
 func UpdateUser(c *gin.Context)  {
-	var user Models.User
-	id := c.Params.ByName("id")
-	err := Models.GetUserByID(&user, id)
+	var subs Models.Subs
+	id := c.Params.ByName("subsid")
+	err := Models.GetSubsInfo(&subs, id)
 	if err != nil{
-		c.JSON(http.StatusNotFound, user)
+		c.JSON(http.StatusNotFound, subs)
 	}
 
-	c.BindJSON(&user)
-	err = Models.UpdateUser(&user, id)
+	c.BindJSON(&subs)
+	err = Models.UpdateUser(&subs, id)
 	if err != nil{
 		c.AbortWithStatus(http.StatusNotFound)
 	}else{
-		c.JSON(http.StatusOK, user)
+		c.JSON(http.StatusOK, subs)
 	}
 }
 
-func DeleteUser(c *gin.Context)  {
-	var user Models.User
-	id := c.Params.ByName("id")
-	err := Models.DeleteUser(&user, id)
+func RemovePacket(c *gin.Context)  {
+	var subs Models.Subs
+	id := c.Params.ByName("subsid")
+	serviceid := c.Params.ByName("serviceid")
+	err := Models.UnregPacket(&subs, id, serviceid)
 	if err != nil {
 		c.AbortWithStatus(http.StatusNotFound)
 	} else {
-		c.JSON(http.StatusOK, gin.H{"id" + id: "is deleted"})
+		c.JSON(http.StatusOK, gin.H{"serviceid" + serviceid: "is deleted"})
 	}
 }

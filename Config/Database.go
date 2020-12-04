@@ -13,7 +13,7 @@ type DBConfig struct {
 }
 
 func BuildDBConfig() *DBConfig{
-	return &DBConfig{file: "thedb.db"}
+	return &DBConfig{file: "subscriber.db"}
 }
 func DbUrl(dbConfig *DBConfig) string{
 	cwd, _ := os.Getwd()
